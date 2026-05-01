@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1. charAt()
+
+Definition in Easy Words
+Returns the character at a specified position (index) in a string.
+
+Syntax
+
+```javascript
+string.charAt(index)
+```
+
+Why We Use This Method
+When you need to find out which character exists at a certain spot, like reading the first letter of a username or checking a specific digit in a code.
+
+Real Code Example
+
+```javascript
+let word = "Hello";
+console.log(word.charAt(1)); // "e"
+```
+
+---
+
+2. toUpperCase()
+
+Definition
+Converts all letters in a string to uppercase.
+
+Syntax
+
+```javascript
+string.toUpperCase()
+```
+
+Why We Use This Method
+Often used to standardize user input (like search terms) so comparisons aren't case‑sensitive, or to format headings.
+
+Example
+
+```javascript
+let name = "John";
+console.log(name.toUpperCase()); // "JOHN"
+```
+
+---
+
+3. toLowerCase()
+
+Definition
+Converts all letters in a string to lowercase.
+
+Syntax
+
+```javascript
+string.toLowerCase()
+```
+
+Why We Use This Method
+Making email addresses or usernames case‑insensitive, or cleaning data before saving to a database.
+
+Example
+
+```javascript
+let email = "User@Example.com";
+let normalized = email.toLowerCase();
+console.log(normalized); // "user@example.com"
+```
+
+---
+
+4. trim()
+
+Definition
+Removes whitespace from both ends of a string (but not between words).
+
+Syntax
+
+```javascript
+string.trim()
+```
+
+Why We Use This Method
+When users accidentally type spaces before or after their input in a form, like a login or comment box.
+
+Example
+
+```javascript
+let userInput = "   hello   ";
+console.log(userInput.trim()); // "hello"
+```
+
+---
+
+5. includes()
+
+Definition
+Checks if a string contains a specified substring. Returns true or false.
+
+Syntax
+
+```javascript
+string.includes(searchString)
+```
+
+Why We Use This Method
+Search features, filtering lists, or checking if a sentence contains a keyword.
+
+Example
+
+```javascript
+let sentence = "I love JavaScript";
+console.log(sentence.includes("Java")); // true
+```
+
+---
+
+6. slice()
+
+Definition
+Extracts a part of a string and returns it as a new string, without changing the original.
+
+Syntax
+
+```javascript
+string.slice(startIndex, endIndex)
+```
+
+(endIndex is optional – if omitted, goes to the end)
+
+Why We Use This Method
+Getting a portion of text, like the first 10 characters of a description or removing the last character.
+
+Example
+
+```javascript
+let text = "Hello world";
+console.log(text.slice(0, 5)); // "Hello"
+```
+
+---
+
+7. replace()
+
+Definition
+Replaces the first occurrence of a specified value with another value.
+
+Syntax
+
+```javascript
+string.replace(searchValue, newValue)
+```
+
+Why We Use This Method
+Correcting typos, censoring bad words, or formatting text dynamically on a page.
+
+Example
+
+```javascript
+let message = "I like cats";
+console.log(message.replace("cats", "dogs")); // "I like dogs"
+```
+
+---
+
+8. split()
+
+Definition
+Splits a string into an array of substrings based on a separator (like a space or comma).
+
+Syntax
+
+```javascript
+string.split(separator)
+```
+
+Why We Use This Method
+Converting a sentence into words, parsing CSV data, or breaking user input into parts.
+
+Example
+
+```javascript
+let data = "apple,banana,grape";
+let fruits = data.split(",");
+console.log(fruits); // ["apple", "banana", "grape"]
+```
+
+---
+
+9. indexOf()
+
+Definition
+Returns the first position (index) where a specified substring is found. Returns -1 if not found.
+
+Syntax
+
+```javascript
+string.indexOf(searchValue)
+```
+
+Why We Use This Method
+Finding where something appears – for example, locating the "@" symbol in an email address or checking if a word exists before extracting it.
+
+Example
+
+```javascript
+let phrase = "Hello world";
+console.log(phrase.indexOf("world")); // 6
+```
+
+---
+
+10. repeat()
+
+Definition
+Returns a new string by repeating the original string a given number of times.
+
+Syntax
+
+```javascript
+string.repeat(count)
+```
+
+Why We Use This Method
+Creating simple ASCII art, generating placeholder text, or repeating a character for visual separators (like -----).
+
+Example
+
+```javascript
+let star = "*";
+console.log(star.repeat(5)); // "*****"
+```
+</body>
+</html>
